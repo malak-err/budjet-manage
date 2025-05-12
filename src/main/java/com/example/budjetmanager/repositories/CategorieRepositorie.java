@@ -1,4 +1,4 @@
 package com.example.budjetmanager.repositories;
 
-public class Transaction {
+public interface CategorieRepositorie {
 }
