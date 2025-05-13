@@ -1,6 +1,6 @@
 package com.example.budjetmanager.controllers;
 
-public class Transaction {
 
+public class Transaction {
 
 }

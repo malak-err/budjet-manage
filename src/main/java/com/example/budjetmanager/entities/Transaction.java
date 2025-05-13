@@ -1,6 +1,6 @@
 package com.example.budjetmanager.entities;
 
-import jakarta.persistence.*;
+import jakarta.persistence;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,6 +17,10 @@ public class Transaction {
    private Double montant;
    private Date date;
    private String description;
+
+    @ManyToOne
+    @JoinColumn(name = "categorie_id")
+    private Categorie categorie;
 
 
     public long getId() {
@@ -50,5 +54,6 @@ public class Transaction {
     public void setDescription(String description) {
         this.description = description;
     }
+
 
 }
