@@ -1,12 +1,11 @@
 package com.example.budjetmanager.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.List;
 
 @Entity
 @Data
@@ -19,28 +18,11 @@ public class Categorie {
     private String name;
     private String type;
 
-    public Long getId() {
-        return id;
-    }
+    @OneToMany(mappedBy = "categorie", cascade = CascadeType.ALL)
+    private List<Transaction> transactions;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    @OneToOne(mappedBy = "categorie")
+    private Budget budget;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
 }
 
