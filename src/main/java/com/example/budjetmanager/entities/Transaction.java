@@ -12,15 +12,6 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Transaction {
-<<<<<<< HEAD
-
-
-
-
-
-
-
-=======
     @Id
    private long id;
    private Double montant;
@@ -59,5 +50,5 @@ public class Transaction {
     public void setDescription(String description) {
         this.description = description;
     }
->>>>>>> 5917aa901cff0e811a8c10a4e7a0d0769b3ef8f7
+
 }
