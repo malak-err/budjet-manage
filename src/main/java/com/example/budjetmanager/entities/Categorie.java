@@ -13,6 +13,8 @@ import java.util.List;
 @AllArgsConstructor
 public class Categorie {
     @Id
+
+
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
