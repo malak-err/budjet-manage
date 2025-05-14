@@ -15,7 +15,6 @@ public class Budget {
     private Double limite;
 
     @OneToOne
-    @JoinColumn(name = "categorie_id")
     private Categorie categorie;
 
 
