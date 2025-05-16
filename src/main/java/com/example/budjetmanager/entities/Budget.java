@@ -16,6 +16,4 @@ public class Budget {
 
     @OneToOne
     private Categorie categorie;
-
-
 }

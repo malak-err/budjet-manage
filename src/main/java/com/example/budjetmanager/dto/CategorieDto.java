@@ -1,12 +1,9 @@
-package com.example.budjetmanager.entities;
+package com.example.budjetmanager.dto;
 
-import com.example.budjetmanager.dto.TransactionDto;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import lombok.Value;
 
 import java.io.Serializable;
-import java.util.Date;
 import java.util.List;
 
 @AllArgsConstructor
