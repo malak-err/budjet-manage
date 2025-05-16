@@ -13,5 +13,5 @@ import java.util.Optional;
 public interface TransactionRepositorie extends JpaRepository<Transaction,Long> {
 
 
-    Optional<List<Transaction>> findTransactionsByCategorie(Categorie categorie);
+
 }
