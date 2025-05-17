@@ -1,13 +1,8 @@
 package com.example.budjetmanager.dto;
 
-import com.example.budjetmanager.entities.Categorie;
-import com.example.budjetmanager.entities.Transaction;
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Value;
 
-import java.io.Serializable;
 import java.util.Date;
 
 
